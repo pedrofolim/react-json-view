@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface ReactJsonViewProps {
+declare export interface ReactJsonViewProps {
   /**
    * This property contains your input JSON.
    *
@@ -125,7 +125,7 @@ export interface ReactJsonViewProps {
   validationMessage?: string;
 }
 
-export interface OnCopyProps {
+declare export interface OnCopyProps {
   /**
    * The JSON tree source object
    */
@@ -140,7 +140,7 @@ export interface OnCopyProps {
   name: string | null;
 }
 
-export interface CollapsedFieldProps {
+declare export interface CollapsedFieldProps {
   /**
    * The name of the entry.
    */
@@ -159,7 +159,7 @@ export interface CollapsedFieldProps {
   namespace: Array<string | null>;
 }
 
-export interface InteractionProps {
+declare export interface InteractionProps {
   /**
    * The updated subtree of the JSON tree.
    */
@@ -186,7 +186,7 @@ export interface InteractionProps {
   new_value?: object | string | number | boolean | null;
 }
 
-export interface OnSelectProps {
+declare export interface OnSelectProps {
   /**
    * The name of the currently selected entry.
    */
@@ -207,7 +207,7 @@ export interface OnSelectProps {
 
 }
 
-export interface ThemeObject {
+declare export interface ThemeObject {
   base00: string;
   base01: string;
   base02: string;
@@ -226,7 +226,7 @@ export interface ThemeObject {
   base0F: string;
 }
 
-export type ThemeKeys =
+declare export type ThemeKeys =
   | 'apathy'
   | 'apathy:inverted'
   | 'ashes'
@@ -265,5 +265,5 @@ export type ThemeKeys =
   | 'tube'
   | 'twilight';
 
-const ReactJson: React.ComponentType<ReactJsonViewProps>;
-export default ReactJson;
+declare const ReactJson: React.ComponentType<ReactJsonViewProps>;
+declare export default ReactJson;
